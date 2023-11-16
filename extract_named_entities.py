@@ -1,32 +1,38 @@
 import spacy
+import re
 # from thinc.api import set_gpu_allocator, require_gpu
 # set_gpu_allocator("pytorch")
 # require_gpu(0)
 
 # nlp = spacy.load("fr_dep_news_trf", disable=["parser", "tagger"])
 
+cavernes = 'corpus_asimov_leaderboard/les_cavernes_d_acier/les_cavernes_d_acier.txt'
+prelude = 'corpus_asimov_leaderboard/prelude_a_fondation/prelude_a_fondation.txt'
+
+BOOK = cavernes
+
 nlp = spacy.load("fr_core_news_lg")
 
-with open('asimov.txt', 'r', encoding='utf-8') as book: 
+with open(BOOK, 'r', encoding='utf-8') as book: 
     text = book.read()
     doc = nlp(text)
 
-with open('characters_trf.txt', 'w', encoding='utf-8') as file:
+with open(BOOK+'_characters.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'PER':
+        if ent.label_ == 'PER' and str(ent.label).match(re.compile(r'[A-Z]')):
             file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
 
-with open('locations_trf.txt', 'w', encoding='utf-8') as file:
+with open(BOOK+'_locations.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'LOC':
+        if ent.label_ == 'LOC' and str(ent.label).match(re.compile(r'[A-Z]')):
             file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
             
-with open('misc_trf.txt', 'w', encoding='utf-8') as file:
+with open(BOOK+'_misc.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'MISC':
+        if ent.label_ == 'MISC' and str(ent.label).match(re.compile(r'[A-Z]')):
             file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
             
-with open('organizations_trf.txt', 'w', encoding='utf-8') as file:
+with open(BOOK+'_organizations.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'ORG':
+        if ent.label_ == 'ORG'  and str(ent.label).match(re.compile(r'[A-Z]')):
             file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
