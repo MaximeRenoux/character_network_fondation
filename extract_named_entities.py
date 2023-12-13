@@ -19,20 +19,20 @@ with open(BOOK, 'r', encoding='utf-8') as book:
 
 with open(BOOK+'_characters.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'PER' and str(ent.label).match(re.compile(r'[A-Z]')):
-            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
+        if ent.label_ == 'PER' and re.search(r'[A-Z]', str(ent.text)) and (ent.root.pos_ == "PROPN" or ent.root.pos_ == "NOUN"):
+            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.root.pos_)+" "+str(ent.label_)+"\n")
 
 with open(BOOK+'_locations.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'LOC' and str(ent.label).match(re.compile(r'[A-Z]')):
-            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
+        if ent.label_ == 'LOC' and re.search(r'[A-Z]', str(ent.text)) and (ent.root.pos_ == "PROPN" or ent.root.pos_ == "NOUN"):
+            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.root.pos_)+" "+str(ent.label_)+"\n")
             
 with open(BOOK+'_misc.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'MISC' and str(ent.label).match(re.compile(r'[A-Z]')):
-            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
+        if ent.label_ == 'MISC' and re.search(r'[A-Z]', str(ent.text)) and (ent.root.pos_ == "PROPN" or ent.root.pos_ == "NOUN"):
+            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.root.pos_)+" "+str(ent.label_)+"\n")
             
 with open(BOOK+'_organizations.txt', 'w', encoding='utf-8') as file:
     for ent in doc.ents:
-        if ent.label_ == 'ORG'  and str(ent.label).match(re.compile(r'[A-Z]')):
-            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.label_)+"\n")
+        if ent.label_ == 'ORG'  and re.search(r'[A-Z]', str(ent.text)) and (ent.root.pos_ == "PROPN" or ent.root.pos_ == "NOUN"):
+            file.write(str(ent.text)+" "+str(ent.start_char)+" "+str(ent.end_char)+" "+str(ent.root.pos_)+" "+str(ent.label_)+"\n")
