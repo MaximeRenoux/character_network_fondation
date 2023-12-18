@@ -1,8 +1,9 @@
 import re
 from difflib import SequenceMatcher
 
-cavernes = 'corpus_asimov_leaderboard/les_cavernes_d_acier/les_cavernes_d_acier.txt'
-prelude = 'corpus_asimov_leaderboard/prelude_a_fondation/prelude_a_fondation.txt'
+cavernes = 'corpus_leaderboard/les_cavernes_d_acier/les_cavernes_d_acier.txt'
+prelude = 'corpus_leaderboard/prelude_a_fondation/prelude_a_fondation.txt'
+fondation_et_empire = 'Corpus_ASIMOV/Fondation_et_empire_sample-cleaned'
 
 BOOK = cavernes
 
@@ -19,14 +20,20 @@ def have_common_word(str1, str2):
     
     common_words = words1.intersection(words2)
     
-    return len(common_words) > 0
+    long_enough = False
+    for word in common_words:
+        if len(word) >= 3:
+            long_enough = True
+    if long_enough:
+        return len(common_words) > 0
+    else:
+        return False
     
 counter_char = {}
 counter_misc = {}
 min_iteration = 3
 
-
-with open(BOOK+'_characters.txt', 'r', encoding='utf-8') as file:
+with open(BOOK+'_CHARACTERS', 'r', encoding='utf-8') as file:
     lines = file.readlines()
     
 for line in lines:
@@ -42,7 +49,7 @@ for line in lines:
         
 # print('\n\n\n\n\n')
         
-with open(BOOK+'_misc.txt', 'r', encoding='utf-8') as file:
+with open(BOOK+'_MISC', 'r', encoding='utf-8') as file:
     lines = file.readlines()
     
 for line in lines:
@@ -56,15 +63,15 @@ for line in lines:
 #     if counter_misc[item] >= min_iteration:
 #         print(item+' : '+str(counter_misc[item]))
 
-with open(BOOK+'_misc.txt', 'r', encoding='utf-8') as originalMiscFile:
+with open(BOOK+'_MISC', 'r', encoding='utf-8') as originalMiscFile:
     linesMisc = originalMiscFile.readlines()
-with open(BOOK+'_characters.txt', 'r', encoding='utf-8') as originalCharFile:
+with open(BOOK+'_CHARACTERS', 'r', encoding='utf-8') as originalCharFile:
     linesChar = originalCharFile.readlines()
     
 
 
-with open(BOOK+'_characters.txt', 'a', encoding='utf-8') as file:
-    file.write('--------------------')
+with open(BOOK+'_CHARACTERS', 'a', encoding='utf-8') as file:
+    file.write('-------------\n')
     for misc in counter_misc:
         for char in counter_char:
             if counter_misc[misc] >= min_iteration  and counter_char[char] < min_iteration and have_common_word(misc, char):
@@ -88,9 +95,4 @@ with open(BOOK+'_characters.txt', 'a', encoding='utf-8') as file:
                         if get_text(line) == char:
                             file.write(line)
             
-# with open(BOOK+'lost_characters.txt', 'a', encoding='utf-8') as file:
-#     file.write('--------------------')
-#     for error in counter_misc:
-#         print(counter_char[error])
-        
                 
