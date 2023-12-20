@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="node" attr.name="names" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Hari Seldon">
+  <data key="d0">Hari Seldon;Seldon;Hari;Maître Seldon;Hari</data>
+</node>
+<node id="Raych Seldon">
+  <data key="d0">Raych Seldon;Barbare Seldon;Hari   Seldon;Raych Seldon</data>
+</node>
+<node id="Eto Demerzel">
+  <data key="d0">Eto Demerzel;Demerzel</data>
+</node>
+<node id="Sire">
+  <data key="d0">Sire</data>
+</node>
+<node id="lEmpereur">
+  <data key="d0">lEmpereur</data>
+</node>
+<node id="Trantor">
+  <data key="d0">Trantor</data>
+</node>
+<node id="Cléon">
+  <data key="d0">Cléon;Cléon Ier</data>
+</node>
+<node id="Hummin">
+  <data key="d0">Hummin;Maître Hummin;Maître Robot;Maître Hummin;Maître Tisalver</data>
+</node>
+<node id="Dors Venabili">
+  <data key="d0">Dors Venabili;Venabili;Dors</data>
+</node>
+<node id="Kan">
+  <data key="d0">Kan;Mannix IV de Kan;Mannix;Mannix IV de Kan</data>
+</node>
+<node id="Jenarr Leggen">
+  <data key="d0">Jenarr Leggen;Leggen</data>
+</node>
+<node id="Mycogène">
+  <data key="d0">Mycogène;Sacratorium de Mycogène;Sacratorium;Sacratorium de Mycogène</data>
+</node>
+<node id="Dahl">
+  <data key="d0">Dahl</data>
+</node>
+<node id="Tisalver">
+  <data key="d0">Tisalver;Maître Tisalver</data>
+</node>
+<node id="Rachelle">
+  <data key="d0">Rachelle</data>
+</node>
+<edge source="Hari Seldon" target="Trantor"/>
+<edge source="Hari Seldon" target="Hummin"/>
+<edge source="Hari Seldon" target="Dors Venabili"/>
+<edge source="Hari Seldon" target="Jenarr Leggen"/>
+<edge source="Trantor" target="Hummin"/>
+<edge source="Trantor" target="Dors Venabili"/>
+<edge source="Trantor" target="Jenarr Leggen"/>
+<edge source="Hummin" target="Dors Venabili"/>
+<edge source="Hummin" target="Jenarr Leggen"/>
+<edge source="Dors Venabili" target="Jenarr Leggen"/>
+</graph></graphml>

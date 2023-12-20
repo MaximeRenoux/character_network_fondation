@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="node" attr.name="names" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Hari Seldon">
+  <data key="d0">Hari Seldon;Seldon;Hari;Maître Seldon;Hari</data>
+</node>
+<node id="Raych Seldon">
+  <data key="d0">Raych Seldon;Barbare Seldon;Hari   Seldon;Raych Seldon</data>
+</node>
+<node id="Eto Demerzel">
+  <data key="d0">Eto Demerzel;Demerzel</data>
+</node>
+<node id="Sire">
+  <data key="d0">Sire</data>
+</node>
+<node id="lEmpereur">
+  <data key="d0">lEmpereur</data>
+</node>
+<node id="Trantor">
+  <data key="d0">Trantor</data>
+</node>
+<node id="Cléon">
+  <data key="d0">Cléon;Cléon Ier</data>
+</node>
+<node id="Hummin">
+  <data key="d0">Hummin;Maître Hummin;Maître Robot;Maître Hummin;Maître Tisalver</data>
+</node>
+<node id="Dors Venabili">
+  <data key="d0">Dors Venabili;Venabili;Dors</data>
+</node>
+<node id="Kan">
+  <data key="d0">Kan;Mannix IV de Kan;Mannix;Mannix IV de Kan</data>
+</node>
+<node id="Jenarr Leggen">
+  <data key="d0">Jenarr Leggen;Leggen</data>
+</node>
+<node id="Mycogène">
+  <data key="d0">Mycogène;Sacratorium de Mycogène;Sacratorium;Sacratorium de Mycogène</data>
+</node>
+<node id="Dahl">
+  <data key="d0">Dahl</data>
+</node>
+<node id="Tisalver">
+  <data key="d0">Tisalver;Maître Tisalver</data>
+</node>
+<node id="Rachelle">
+  <data key="d0">Rachelle</data>
+</node>
+<edge source="Hari Seldon" target="Hari Seldon"/>
+<edge source="Hari Seldon" target="Raych Seldon"/>
+<edge source="Hari Seldon" target="Eto Demerzel"/>
+<edge source="Hari Seldon" target="Sire"/>
+<edge source="Hari Seldon" target="lEmpereur"/>
+<edge source="Hari Seldon" target="Trantor"/>
+<edge source="Hari Seldon" target="Cléon"/>
+<edge source="Hari Seldon" target="Hummin"/>
+<edge source="Hari Seldon" target="Dors Venabili"/>
+<edge source="Hari Seldon" target="Kan"/>
+<edge source="Hari Seldon" target="Jenarr Leggen"/>
+<edge source="Hari Seldon" target="Mycogène"/>
+<edge source="Hari Seldon" target="Dahl"/>
+<edge source="Hari Seldon" target="Tisalver"/>
+<edge source="Hari Seldon" target="Rachelle"/>
+<edge source="Raych Seldon" target="Raych Seldon"/>
+<edge source="Raych Seldon" target="Eto Demerzel"/>
+<edge source="Raych Seldon" target="Sire"/>
+<edge source="Raych Seldon" target="lEmpereur"/>
+<edge source="Raych Seldon" target="Trantor"/>
+<edge source="Raych Seldon" target="Cléon"/>
+<edge source="Raych Seldon" target="Hummin"/>
+<edge source="Raych Seldon" target="Dors Venabili"/>
+<edge source="Raych Seldon" target="Kan"/>
+<edge source="Raych Seldon" target="Jenarr Leggen"/>
+<edge source="Raych Seldon" target="Mycogène"/>
+<edge source="Raych Seldon" target="Dahl"/>
+<edge source="Raych Seldon" target="Tisalver"/>
+<edge source="Raych Seldon" target="Rachelle"/>
+<edge source="Eto Demerzel" target="Eto Demerzel"/>
+<edge source="Eto Demerzel" target="Sire"/>
+<edge source="Eto Demerzel" target="lEmpereur"/>
+<edge source="Eto Demerzel" target="Trantor"/>
+<edge source="Eto Demerzel" target="Cléon"/>
+<edge source="Eto Demerzel" target="Hummin"/>
+<edge source="Eto Demerzel" target="Dors Venabili"/>
+<edge source="Eto Demerzel" target="Kan"/>
+<edge source="Eto Demerzel" target="Jenarr Leggen"/>
+<edge source="Eto Demerzel" target="Mycogène"/>
+<edge source="Eto Demerzel" target="Dahl"/>
+<edge source="Eto Demerzel" target="Tisalver"/>
+<edge source="Eto Demerzel" target="Rachelle"/>
+<edge source="Sire" target="Sire"/>
+<edge source="Sire" target="lEmpereur"/>
+<edge source="Sire" target="Trantor"/>
+<edge source="Sire" target="Cléon"/>
+<edge source="Sire" target="Hummin"/>
+<edge source="Sire" target="Dors Venabili"/>
+<edge source="Sire" target="Kan"/>
+<edge source="Sire" target="Jenarr Leggen"/>
+<edge source="Sire" target="Mycogène"/>
+<edge source="Sire" target="Dahl"/>
+<edge source="Sire" target="Tisalver"/>
+<edge source="Sire" target="Rachelle"/>
+<edge source="lEmpereur" target="lEmpereur"/>
+<edge source="lEmpereur" target="Trantor"/>
+<edge source="lEmpereur" target="Cléon"/>
+<edge source="lEmpereur" target="Hummin"/>
+<edge source="lEmpereur" target="Dors Venabili"/>
+<edge source="lEmpereur" target="Kan"/>
+<edge source="lEmpereur" target="Jenarr Leggen"/>
+<edge source="lEmpereur" target="Mycogène"/>
+<edge source="lEmpereur" target="Dahl"/>
+<edge source="lEmpereur" target="Tisalver"/>
+<edge source="lEmpereur" target="Rachelle"/>
+<edge source="Trantor" target="Trantor"/>
+<edge source="Trantor" target="Cléon"/>
+<edge source="Trantor" target="Hummin"/>
+<edge source="Trantor" target="Dors Venabili"/>
+<edge source="Trantor" target="Kan"/>
+<edge source="Trantor" target="Jenarr Leggen"/>
+<edge source="Trantor" target="Mycogène"/>
+<edge source="Trantor" target="Dahl"/>
+<edge source="Trantor" target="Tisalver"/>
+<edge source="Trantor" target="Rachelle"/>
+<edge source="Cléon" target="Cléon"/>
+<edge source="Cléon" target="Hummin"/>
+<edge source="Cléon" target="Dors Venabili"/>
+<edge source="Cléon" target="Kan"/>
+<edge source="Cléon" target="Jenarr Leggen"/>
+<edge source="Cléon" target="Mycogène"/>
+<edge source="Cléon" target="Dahl"/>
+<edge source="Cléon" target="Tisalver"/>
+<edge source="Cléon" target="Rachelle"/>
+<edge source="Hummin" target="Hummin"/>
+<edge source="Hummin" target="Dors Venabili"/>
+<edge source="Hummin" target="Kan"/>
+<edge source="Hummin" target="Jenarr Leggen"/>
+<edge source="Hummin" target="Mycogène"/>
+<edge source="Hummin" target="Dahl"/>
+<edge source="Hummin" target="Tisalver"/>
+<edge source="Hummin" target="Rachelle"/>
+<edge source="Dors Venabili" target="Dors Venabili"/>
+<edge source="Dors Venabili" target="Kan"/>
+<edge source="Dors Venabili" target="Jenarr Leggen"/>
+<edge source="Dors Venabili" target="Mycogène"/>
+<edge source="Dors Venabili" target="Dahl"/>
+<edge source="Dors Venabili" target="Tisalver"/>
+<edge source="Dors Venabili" target="Rachelle"/>
+<edge source="Kan" target="Kan"/>
+<edge source="Kan" target="Jenarr Leggen"/>
+<edge source="Kan" target="Mycogène"/>
+<edge source="Kan" target="Dahl"/>
+<edge source="Kan" target="Tisalver"/>
+<edge source="Kan" target="Rachelle"/>
+<edge source="Jenarr Leggen" target="Jenarr Leggen"/>
+<edge source="Jenarr Leggen" target="Mycogène"/>
+<edge source="Jenarr Leggen" target="Dahl"/>
+<edge source="Jenarr Leggen" target="Tisalver"/>
+<edge source="Jenarr Leggen" target="Rachelle"/>
+<edge source="Mycogène" target="Mycogène"/>
+<edge source="Mycogène" target="Dahl"/>
+<edge source="Mycogène" target="Tisalver"/>
+<edge source="Mycogène" target="Rachelle"/>
+<edge source="Dahl" target="Dahl"/>
+<edge source="Dahl" target="Tisalver"/>
+<edge source="Dahl" target="Rachelle"/>
+<edge source="Tisalver" target="Tisalver"/>
+<edge source="Tisalver" target="Rachelle"/>
+<edge source="Rachelle" target="Rachelle"/>
+</graph></graphml>

@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="node" attr.name="names" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Hari Seldon">
+  <data key="d0"></data>
+</node>
+<node id="Raych Seldon">
+  <data key="d0"></data>
+</node>
+<node id="Eto Demerzel">
+  <data key="d0"></data>
+</node>
+<node id="Sire">
+  <data key="d0"></data>
+</node>
+<node id="l’Empereur">
+  <data key="d0"></data>
+</node>
+<node id="Trantor">
+  <data key="d0"></data>
+</node>
+<node id="Cléon">
+  <data key="d0"></data>
+</node>
+<node id="Hummin">
+  <data key="d0"></data>
+</node>
+<node id="Dors Venabili">
+  <data key="d0"></data>
+</node>
+<node id="Kan">
+  <data key="d0"></data>
+</node>
+<node id="Jenarr Leggen">
+  <data key="d0"></data>
+</node>
+<node id="Mycogène">
+  <data key="d0"></data>
+</node>
+<node id="Dahl">
+  <data key="d0"></data>
+</node>
+<node id="Tisalver">
+  <data key="d0"></data>
+</node>
+<node id="Rachelle">
+  <data key="d0"></data>
+</node>
+<node id="R. Sammy">
+  <data key="d0">R. Sammy</data>
+</node>
+<node id="Baley">
+  <data key="d0">Baley;Lije Baley;Elijah Baley;Elijah Baley;Lije Baley;Lije !</data>
+</node>
+<node id="Enderby">
+  <data key="d0">Enderby</data>
+</node>
+<node id="Roj Nemennuh Sarton">
+  <data key="d0">Roj Nemennuh Sarton;Dr Sarton;Sarton</data>
+</node>
+<node id="Spacetown">
+  <data key="d0">Spacetown</data>
+</node>
+<node id="Robot Daneel">
+  <data key="d0">Robot Daneel</data>
+</node>
+<node id="R. Daneel">
+  <data key="d0">R. Daneel</data>
+</node>
+<node id="Daneel">
+  <data key="d0">Daneel;R. Daneel;Daneel Olivaw;Instantanément R. Daneel;Daneel</data>
+</node>
+<node id="R. Daneel Olivaw">
+  <data key="d0">R. Daneel Olivaw;R. Daneel Olivaw</data>
+</node>
+<node id="Jessie">
+  <data key="d0">Jessie;Voyons Jessie;Jessie !</data>
+</node>
+<node id="Han Fastolfe">
+  <data key="d0">Han Fastolfe;Fastolfe;docteur Fastolfe;Dr Fastolfe;saint Fastolfe</data>
+</node>
+<node id="A. Gerrigel">
+  <data key="d0">A. Gerrigel;Dr Gerrigel;Docteur Gerrigel</data>
+</node>
+<node id="Clousarr">
+  <data key="d0">Clousarr;M. Clousarr</data>
+</node>
+<edge source="Hari Seldon" target="Hari Seldon"/>
+<edge source="Hari Seldon" target="Raych Seldon"/>
+<edge source="Hari Seldon" target="Eto Demerzel"/>
+<edge source="Hari Seldon" target="Sire"/>
+<edge source="Hari Seldon" target="l’Empereur"/>
+<edge source="Hari Seldon" target="Trantor"/>
+<edge source="Hari Seldon" target="Cléon"/>
+<edge source="Hari Seldon" target="Hummin"/>
+<edge source="Hari Seldon" target="Dors Venabili"/>
+<edge source="Hari Seldon" target="Kan"/>
+<edge source="Hari Seldon" target="Jenarr Leggen"/>
+<edge source="Hari Seldon" target="Mycogène"/>
+<edge source="Hari Seldon" target="Dahl"/>
+<edge source="Hari Seldon" target="Tisalver"/>
+<edge source="Hari Seldon" target="Rachelle"/>
+<edge source="Raych Seldon" target="Raych Seldon"/>
+<edge source="Raych Seldon" target="Eto Demerzel"/>
+<edge source="Raych Seldon" target="Sire"/>
+<edge source="Raych Seldon" target="l’Empereur"/>
+<edge source="Raych Seldon" target="Trantor"/>
+<edge source="Raych Seldon" target="Cléon"/>
+<edge source="Raych Seldon" target="Hummin"/>
+<edge source="Raych Seldon" target="Dors Venabili"/>
+<edge source="Raych Seldon" target="Kan"/>
+<edge source="Raych Seldon" target="Jenarr Leggen"/>
+<edge source="Raych Seldon" target="Mycogène"/>
+<edge source="Raych Seldon" target="Dahl"/>
+<edge source="Raych Seldon" target="Tisalver"/>
+<edge source="Raych Seldon" target="Rachelle"/>
+<edge source="Eto Demerzel" target="Eto Demerzel"/>
+<edge source="Eto Demerzel" target="Sire"/>
+<edge source="Eto Demerzel" target="l’Empereur"/>
+<edge source="Eto Demerzel" target="Trantor"/>
+<edge source="Eto Demerzel" target="Cléon"/>
+<edge source="Eto Demerzel" target="Hummin"/>
+<edge source="Eto Demerzel" target="Dors Venabili"/>
+<edge source="Eto Demerzel" target="Kan"/>
+<edge source="Eto Demerzel" target="Jenarr Leggen"/>
+<edge source="Eto Demerzel" target="Mycogène"/>
+<edge source="Eto Demerzel" target="Dahl"/>
+<edge source="Eto Demerzel" target="Tisalver"/>
+<edge source="Eto Demerzel" target="Rachelle"/>
+<edge source="Sire" target="Sire"/>
+<edge source="Sire" target="l’Empereur"/>
+<edge source="Sire" target="Trantor"/>
+<edge source="Sire" target="Cléon"/>
+<edge source="Sire" target="Hummin"/>
+<edge source="Sire" target="Dors Venabili"/>
+<edge source="Sire" target="Kan"/>
+<edge source="Sire" target="Jenarr Leggen"/>
+<edge source="Sire" target="Mycogène"/>
+<edge source="Sire" target="Dahl"/>
+<edge source="Sire" target="Tisalver"/>
+<edge source="Sire" target="Rachelle"/>
+<edge source="l’Empereur" target="l’Empereur"/>
+<edge source="l’Empereur" target="Trantor"/>
+<edge source="l’Empereur" target="Cléon"/>
+<edge source="l’Empereur" target="Hummin"/>
+<edge source="l’Empereur" target="Dors Venabili"/>
+<edge source="l’Empereur" target="Kan"/>
+<edge source="l’Empereur" target="Jenarr Leggen"/>
+<edge source="l’Empereur" target="Mycogène"/>
+<edge source="l’Empereur" target="Dahl"/>
+<edge source="l’Empereur" target="Tisalver"/>
+<edge source="l’Empereur" target="Rachelle"/>
+<edge source="Trantor" target="Trantor"/>
+<edge source="Trantor" target="Cléon"/>
+<edge source="Trantor" target="Hummin"/>
+<edge source="Trantor" target="Dors Venabili"/>
+<edge source="Trantor" target="Kan"/>
+<edge source="Trantor" target="Jenarr Leggen"/>
+<edge source="Trantor" target="Mycogène"/>
+<edge source="Trantor" target="Dahl"/>
+<edge source="Trantor" target="Tisalver"/>
+<edge source="Trantor" target="Rachelle"/>
+<edge source="Cléon" target="Cléon"/>
+<edge source="Cléon" target="Hummin"/>
+<edge source="Cléon" target="Dors Venabili"/>
+<edge source="Cléon" target="Kan"/>
+<edge source="Cléon" target="Jenarr Leggen"/>
+<edge source="Cléon" target="Mycogène"/>
+<edge source="Cléon" target="Dahl"/>
+<edge source="Cléon" target="Tisalver"/>
+<edge source="Cléon" target="Rachelle"/>
+<edge source="Hummin" target="Hummin"/>
+<edge source="Hummin" target="Dors Venabili"/>
+<edge source="Hummin" target="Kan"/>
+<edge source="Hummin" target="Jenarr Leggen"/>
+<edge source="Hummin" target="Mycogène"/>
+<edge source="Hummin" target="Dahl"/>
+<edge source="Hummin" target="Tisalver"/>
+<edge source="Hummin" target="Rachelle"/>
+<edge source="Dors Venabili" target="Dors Venabili"/>
+<edge source="Dors Venabili" target="Kan"/>
+<edge source="Dors Venabili" target="Jenarr Leggen"/>
+<edge source="Dors Venabili" target="Mycogène"/>
+<edge source="Dors Venabili" target="Dahl"/>
+<edge source="Dors Venabili" target="Tisalver"/>
+<edge source="Dors Venabili" target="Rachelle"/>
+<edge source="Kan" target="Kan"/>
+<edge source="Kan" target="Jenarr Leggen"/>
+<edge source="Kan" target="Mycogène"/>
+<edge source="Kan" target="Dahl"/>
+<edge source="Kan" target="Tisalver"/>
+<edge source="Kan" target="Rachelle"/>
+<edge source="Jenarr Leggen" target="Jenarr Leggen"/>
+<edge source="Jenarr Leggen" target="Mycogène"/>
+<edge source="Jenarr Leggen" target="Dahl"/>
+<edge source="Jenarr Leggen" target="Tisalver"/>
+<edge source="Jenarr Leggen" target="Rachelle"/>
+<edge source="Mycogène" target="Mycogène"/>
+<edge source="Mycogène" target="Dahl"/>
+<edge source="Mycogène" target="Tisalver"/>
+<edge source="Mycogène" target="Rachelle"/>
+<edge source="Dahl" target="Dahl"/>
+<edge source="Dahl" target="Tisalver"/>
+<edge source="Dahl" target="Rachelle"/>
+<edge source="Tisalver" target="Tisalver"/>
+<edge source="Tisalver" target="Rachelle"/>
+<edge source="Rachelle" target="Rachelle"/>
+<edge source="R. Sammy" target="R. Sammy"/>
+<edge source="R. Sammy" target="Baley"/>
+<edge source="R. Sammy" target="Enderby"/>
+<edge source="R. Sammy" target="Roj Nemennuh Sarton"/>
+<edge source="R. Sammy" target="Spacetown"/>
+<edge source="R. Sammy" target="Robot Daneel"/>
+<edge source="R. Sammy" target="R. Daneel"/>
+<edge source="R. Sammy" target="Daneel"/>
+<edge source="R. Sammy" target="R. Daneel Olivaw"/>
+<edge source="R. Sammy" target="Jessie"/>
+<edge source="R. Sammy" target="Han Fastolfe"/>
+<edge source="R. Sammy" target="A. Gerrigel"/>
+<edge source="R. Sammy" target="Clousarr"/>
+<edge source="Baley" target="Baley"/>
+<edge source="Baley" target="Enderby"/>
+<edge source="Baley" target="Roj Nemennuh Sarton"/>
+<edge source="Baley" target="Spacetown"/>
+<edge source="Baley" target="Robot Daneel"/>
+<edge source="Baley" target="R. Daneel"/>
+<edge source="Baley" target="Daneel"/>
+<edge source="Baley" target="R. Daneel Olivaw"/>
+<edge source="Baley" target="Jessie"/>
+<edge source="Baley" target="Han Fastolfe"/>
+<edge source="Baley" target="A. Gerrigel"/>
+<edge source="Baley" target="Clousarr"/>
+<edge source="Enderby" target="Enderby"/>
+<edge source="Enderby" target="Roj Nemennuh Sarton"/>
+<edge source="Enderby" target="Spacetown"/>
+<edge source="Enderby" target="Robot Daneel"/>
+<edge source="Enderby" target="R. Daneel"/>
+<edge source="Enderby" target="Daneel"/>
+<edge source="Enderby" target="R. Daneel Olivaw"/>
+<edge source="Enderby" target="Jessie"/>
+<edge source="Enderby" target="Han Fastolfe"/>
+<edge source="Enderby" target="A. Gerrigel"/>
+<edge source="Enderby" target="Clousarr"/>
+<edge source="Roj Nemennuh Sarton" target="Roj Nemennuh Sarton"/>
+<edge source="Roj Nemennuh Sarton" target="Spacetown"/>
+<edge source="Roj Nemennuh Sarton" target="Robot Daneel"/>
+<edge source="Roj Nemennuh Sarton" target="R. Daneel"/>
+<edge source="Roj Nemennuh Sarton" target="Daneel"/>
+<edge source="Roj Nemennuh Sarton" target="R. Daneel Olivaw"/>
+<edge source="Roj Nemennuh Sarton" target="Jessie"/>
+<edge source="Roj Nemennuh Sarton" target="Han Fastolfe"/>
+<edge source="Roj Nemennuh Sarton" target="A. Gerrigel"/>
+<edge source="Roj Nemennuh Sarton" target="Clousarr"/>
+<edge source="Spacetown" target="Spacetown"/>
+<edge source="Spacetown" target="Robot Daneel"/>
+<edge source="Spacetown" target="R. Daneel"/>
+<edge source="Spacetown" target="Daneel"/>
+<edge source="Spacetown" target="R. Daneel Olivaw"/>
+<edge source="Spacetown" target="Jessie"/>
+<edge source="Spacetown" target="Han Fastolfe"/>
+<edge source="Spacetown" target="A. Gerrigel"/>
+<edge source="Spacetown" target="Clousarr"/>
+<edge source="Robot Daneel" target="Robot Daneel"/>
+<edge source="Robot Daneel" target="R. Daneel"/>
+<edge source="Robot Daneel" target="Daneel"/>
+<edge source="Robot Daneel" target="R. Daneel Olivaw"/>
+<edge source="Robot Daneel" target="Jessie"/>
+<edge source="Robot Daneel" target="Han Fastolfe"/>
+<edge source="Robot Daneel" target="A. Gerrigel"/>
+<edge source="Robot Daneel" target="Clousarr"/>
+<edge source="R. Daneel" target="R. Daneel"/>
+<edge source="R. Daneel" target="Daneel"/>
+<edge source="R. Daneel" target="R. Daneel Olivaw"/>
+<edge source="R. Daneel" target="Jessie"/>
+<edge source="R. Daneel" target="Han Fastolfe"/>
+<edge source="R. Daneel" target="A. Gerrigel"/>
+<edge source="R. Daneel" target="Clousarr"/>
+<edge source="Daneel" target="Daneel"/>
+<edge source="Daneel" target="R. Daneel Olivaw"/>
+<edge source="Daneel" target="Jessie"/>
+<edge source="Daneel" target="Han Fastolfe"/>
+<edge source="Daneel" target="A. Gerrigel"/>
+<edge source="Daneel" target="Clousarr"/>
+<edge source="R. Daneel Olivaw" target="R. Daneel Olivaw"/>
+<edge source="R. Daneel Olivaw" target="Jessie"/>
+<edge source="R. Daneel Olivaw" target="Han Fastolfe"/>
+<edge source="R. Daneel Olivaw" target="A. Gerrigel"/>
+<edge source="R. Daneel Olivaw" target="Clousarr"/>
+<edge source="Jessie" target="Jessie"/>
+<edge source="Jessie" target="Han Fastolfe"/>
+<edge source="Jessie" target="A. Gerrigel"/>
+<edge source="Jessie" target="Clousarr"/>
+<edge source="Han Fastolfe" target="Han Fastolfe"/>
+<edge source="Han Fastolfe" target="A. Gerrigel"/>
+<edge source="Han Fastolfe" target="Clousarr"/>
+<edge source="A. Gerrigel" target="A. Gerrigel"/>
+<edge source="A. Gerrigel" target="Clousarr"/>
+<edge source="Clousarr" target="Clousarr"/>
+</graph></graphml>

@@ -49,7 +49,7 @@ for line in lines:
         
 # print('\n\n\n\n\n')
         
-with open(BOOK+'_MISC', 'r', encoding='utf-8') as file:
+with open(BOOK+'_LOCATIONS', 'r', encoding='utf-8') as file:
     lines = file.readlines()
     
 for line in lines:
@@ -63,8 +63,8 @@ for line in lines:
 #     if counter_misc[item] >= min_iteration:
 #         print(item+' : '+str(counter_misc[item]))
 
-with open(BOOK+'_MISC', 'r', encoding='utf-8') as originalMiscFile:
-    linesMisc = originalMiscFile.readlines()
+with open(BOOK+'_LOCATIONS', 'r', encoding='utf-8') as originalLocationsFile:
+    linesLocations = originalLocationsFile.readlines()
 with open(BOOK+'_CHARACTERS', 'r', encoding='utf-8') as originalCharFile:
     linesChar = originalCharFile.readlines()
     
@@ -76,7 +76,7 @@ with open(BOOK+'_CHARACTERS', 'a', encoding='utf-8') as file:
         for char in counter_char:
             if counter_misc[misc] >= min_iteration  and counter_char[char] < min_iteration and have_common_word(misc, char):
                 print("----")
-                print('Misc : '+misc+' : '+str(counter_misc[misc]))
+                print('Locations : '+misc+' : '+str(counter_misc[misc]))
                 print('Perso : '+char+' : '+str(counter_char[char]))
                 print("----")
                 
@@ -87,7 +87,7 @@ with open(BOOK+'_CHARACTERS', 'a', encoding='utf-8') as file:
                 
                 if letter_count > 2:
                         
-                    for line in linesMisc:
+                    for line in linesLocations:
                         if get_text(line) == misc:
                             file.write(line)
                             
