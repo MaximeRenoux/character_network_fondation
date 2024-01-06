@@ -10,7 +10,7 @@ cavernes = 'corpus_leaderboard/les_cavernes_d_acier/les_cavernes_d_acier.txt'
 prelude = 'corpus_leaderboard/prelude_a_fondation/prelude_a_fondation.txt'
 fondation_et_empire = 'Corpus_ASIMOV/Fondation_et_empire_sample-cleaned'
 
-BOOK = prelude
+BOOK = cavernes
 
 nlp = spacy.load("fr_core_news_lg")
 

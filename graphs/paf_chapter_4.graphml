@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="node" attr.name="names" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Hari Seldon">
+  <data key="d0">Hari Seldon;Seldon;Hari;Maître Seldon;Hari</data>
+</node>
+<node id="Hummin">
+  <data key="d0">Hummin;Maître Hummin;Maître Robot;Maître Hummin;Maître Tisalver</data>
+</node>
+<node id="Eto Demerzel">
+  <data key="d0">Eto Demerzel;Demerzel</data>
+</node>
+<node id="Dors Venabili">
+  <data key="d0">Dors Venabili;Venabili;Dors</data>
+</node>
+<node id="Trantor">
+  <data key="d0">Trantor</data>
+</node>
+<node id="Cléon">
+  <data key="d0">Cléon;Cléon Ier</data>
+</node>
+<node id="Sire">
+  <data key="d0">Sire</data>
+</node>
+<node id="Kan">
+  <data key="d0">Kan;Mannix IV de Kan;Mannix;Mannix IV de Kan</data>
+</node>
+<edge source="Hari Seldon" target="Hummin"/>
+<edge source="Hari Seldon" target="Eto Demerzel"/>
+<edge source="Hari Seldon" target="Dors Venabili"/>
+<edge source="Hari Seldon" target="Trantor"/>
+<edge source="Hari Seldon" target="Cléon"/>
+<edge source="Hari Seldon" target="Sire"/>
+<edge source="Hari Seldon" target="Kan"/>
+<edge source="Hummin" target="Eto Demerzel"/>
+<edge source="Hummin" target="Dors Venabili"/>
+<edge source="Hummin" target="Trantor"/>
+<edge source="Hummin" target="Cléon"/>
+<edge source="Hummin" target="Sire"/>
+<edge source="Hummin" target="Kan"/>
+<edge source="Eto Demerzel" target="Dors Venabili"/>
+<edge source="Eto Demerzel" target="Trantor"/>
+<edge source="Eto Demerzel" target="Cléon"/>
+<edge source="Eto Demerzel" target="Sire"/>
+<edge source="Eto Demerzel" target="Kan"/>
+<edge source="Dors Venabili" target="Trantor"/>
+<edge source="Dors Venabili" target="Cléon"/>
+<edge source="Dors Venabili" target="Sire"/>
+<edge source="Dors Venabili" target="Kan"/>
+<edge source="Trantor" target="Cléon"/>
+<edge source="Trantor" target="Sire"/>
+<edge source="Trantor" target="Kan"/>
+<edge source="Cléon" target="Sire"/>
+<edge source="Cléon" target="Kan"/>
+<edge source="Sire" target="Kan"/>
+</graph></graphml>

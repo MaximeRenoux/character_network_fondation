@@ -76,8 +76,37 @@ for z in range(2):
                     
         aliasesList = modified_aliasesList
         
-        # print(aliasesList)
-        # print('\n')
+        filtered_aliasesList = []
+        
+        #Remove characters not in chapter
+        
+        with open(CHAPTER, 'r') as chapter:
+            buffer = [''] * window_size
+            position = 0
+            
+            while True:
+                char = chapter.read(1)
+                if not char:
+                    break  # End of file
+                buffer.pop(0)
+                buffer.append(char)
+                window = ''.join(buffer)
+                
+                # Check if any alias is in the current window
+                for character in aliasesList:
+                    for alias in character:
+                        if alias in window and character not in filtered_aliasesList:
+                            filtered_aliasesList.append(character)
+                            break 
+                        
+        aliasesList = filtered_aliasesList
+        
+        for i in range(len(aliasesList)):
+            unique_set = set()
+            aliasesList[i] = [x for x in aliasesList[i] if x not in unique_set and (unique_set.add(x) or True)]
+
+        print(aliasesList)
+        print('\n')
         
         #Initialize dictionnary of positions
         position_dict = {}
@@ -164,30 +193,30 @@ for z in range(2):
         graphml = "".join(nx.generate_graphml(G))
         df_dict["graphml"].append(graphml)
         
-        graphml_filename = os.path.join(output_directory, BOOK + '_chapter_' + str(chapter_number) + '.graphml')
+        graphml_filename = os.path.join(output_directory, 'graphs/'+BOOK + '_chapter_' + str(chapter_number) + '.graphml')
 
-        # Generate the GraphML file
-        nx.write_graphml(G, graphml_filename)
+        # # Generate the GraphML file
+        # nx.write_graphml(G, graphml_filename)
 
-        # Update the DataFrame (if needed)
-        df_dict = {"ID": ["{}{}".format(BOOK+str(chapter_number-1), chapter)], "graphml": [graphml_filename]}
-        df = pd.DataFrame(df_dict)
-        df.set_index("ID", inplace=True)
-        df.to_csv(os.path.join(output_directory, 'my_submission.csv'), mode='a', header=not os.path.exists(os.path.join(output_directory, 'my_submission.csv')))
+        # # Update the DataFrame (if needed)
+        # df_dict = {"ID": ["{}{}".format(BOOK+str(chapter_number-1), chapter)], "graphml": [graphml_filename]}
+        # df = pd.DataFrame(df_dict)
+        # df.set_index("ID", inplace=True)
+        # df.to_csv(os.path.join(output_directory, 'my_submission.csv'), mode='a', header=not os.path.exists(os.path.join(output_directory, 'my_submission.csv')))
 
-        #Display graph
+        # #Display graph
         
-        # Loop through each graph and display it
-        for i, (graphml_id, graphml_filename) in enumerate(zip(df_dict["ID"], df_dict["graphml"])):
-            # Read the graph from the GraphML file
-            G = nx.read_graphml(graphml_filename)
+        # # Loop through each graph and display it
+        # for i, (graphml_id, graphml_filename) in enumerate(zip(df_dict["ID"], df_dict["graphml"])):
+        #     # Read the graph from the GraphML file
+        #     G = nx.read_graphml(graphml_filename)
 
-            # Display the graph using Matplotlib
-            plt.figure(figsize=(10, 8))
-            pos = nx.spring_layout(G)  # You can use a different layout algorithm if needed
-            nx.draw(G, pos, with_labels=True, node_size=500, font_size=8)
-            plt.title(f"Graph {i + 1}: {graphml_id}")
-            plt.show()
+        #     # Display the graph using Matplotlib
+        #     plt.figure(figsize=(10, 8))
+        #     pos = nx.spring_layout(G)  # You can use a different layout algorithm if needed
+        #     nx.draw(G, pos, with_labels=True, node_size=500, font_size=8)
+        #     plt.title(f"Graph {i + 1}: {graphml_id}")
+        #     plt.show()
 
 df = pd.DataFrame(df_dict)
 df.set_index("ID", inplace=True)

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="node" attr.name="names" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Jenarr Leggen">
+  <data key="d0">Jenarr Leggen;Leggen</data>
+</node>
+<node id="Hari Seldon">
+  <data key="d0">Hari Seldon;Seldon;Hari;Maître Seldon;Hari</data>
+</node>
+<node id="Dors Venabili">
+  <data key="d0">Dors Venabili;Venabili;Dors</data>
+</node>
+<node id="Trantor">
+  <data key="d0">Trantor</data>
+</node>
+<edge source="Jenarr Leggen" target="Hari Seldon"/>
+<edge source="Jenarr Leggen" target="Dors Venabili"/>
+<edge source="Jenarr Leggen" target="Trantor"/>
+<edge source="Hari Seldon" target="Dors Venabili"/>
+<edge source="Hari Seldon" target="Trantor"/>
+<edge source="Dors Venabili" target="Trantor"/>
+</graph></graphml>

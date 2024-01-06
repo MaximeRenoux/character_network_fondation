@@ -30,7 +30,7 @@ def have_common_word(str1, str2):
         return False
     
 counter_char = {}
-counter_misc = {}
+counter_loc = {}
 min_iteration = 3
 
 with open(BOOK+'_CHARACTERS', 'r', encoding='utf-8') as file:
@@ -54,14 +54,14 @@ with open(BOOK+'_LOCATIONS', 'r', encoding='utf-8') as file:
     
 for line in lines:
     text = get_text(line)
-    if text not in counter_misc:
-        counter_misc[text] = 1 
+    if text not in counter_loc:
+        counter_loc[text] = 1 
     else:
-        counter_misc[text] += 1
+        counter_loc[text] += 1
         
-# for item in counter_misc:
-#     if counter_misc[item] >= min_iteration:
-#         print(item+' : '+str(counter_misc[item]))
+# for item in counter_loc:
+#     if counter_loc[item] >= min_iteration:
+#         print(item+' : '+str(counter_loc[item]))
 
 with open(BOOK+'_LOCATIONS', 'r', encoding='utf-8') as originalLocationsFile:
     linesLocations = originalLocationsFile.readlines()
@@ -72,11 +72,11 @@ with open(BOOK+'_CHARACTERS', 'r', encoding='utf-8') as originalCharFile:
 
 with open(BOOK+'_CHARACTERS', 'a', encoding='utf-8') as file:
     file.write('-------------\n')
-    for misc in counter_misc:
+    for loc in counter_loc:
         for char in counter_char:
-            if counter_misc[misc] >= min_iteration  and counter_char[char] < min_iteration and have_common_word(misc, char):
+            if counter_loc[loc] >= min_iteration  and counter_char[char] < min_iteration and have_common_word(loc, char):
                 print("----")
-                print('Locations : '+misc+' : '+str(counter_misc[misc]))
+                print('Locations : '+loc+' : '+str(counter_loc[loc]))
                 print('Perso : '+char+' : '+str(counter_char[char]))
                 print("----")
                 
@@ -88,7 +88,7 @@ with open(BOOK+'_CHARACTERS', 'a', encoding='utf-8') as file:
                 if letter_count > 2:
                         
                     for line in linesLocations:
-                        if get_text(line) == misc:
+                        if get_text(line) == loc:
                             file.write(line)
                             
                     for line in linesChar:

@@ -5,7 +5,7 @@ cavernes = 'corpus_leaderboard/les_cavernes_d_acier/les_cavernes_d_acier.txt'
 prelude = 'corpus_leaderboard/prelude_a_fondation/prelude_a_fondation.txt'
 fondation_et_empire = 'Corpus_ASIMOV/Fondation_et_empire_sample-cleaned'
 
-BOOK = prelude
+BOOK = cavernes
 
 def get_text(input_string):
     match = re.search(r'^\D+', input_string)
