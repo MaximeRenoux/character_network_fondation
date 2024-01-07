@@ -43,18 +43,20 @@ def is_common_noun(word_to_check):
     #     print(word_to_check)
     return common
 
+
+"""Creating first dictionnary of aliases"""
 for line in lines:
     bool = False
 
     if get_text(line) not in alias_dict:
-        print('line : ', line)
+        #print('line : ', line)
         for word_from_line in line.split():
             if len(word_from_line) >= 3:
-                print('word_from_line : ', word_from_line)
+                #print('word_from_line : ', word_from_line)
                 for alias in alias_dict:
-                    print('alias : ', alias)
+                    #print('alias : ', alias)
                     for word_from_dict in alias.split():
-                        print('word_from_dict', word_from_dict)
+                        #print('word_from_dict', word_from_dict)
                         if word_from_line == word_from_dict and word_from_line.isalpha() and not is_common_noun(word_from_dict):
                             if get_text(line) not in alias_dict[alias]:
                                 alias_dict[alias].append(get_text(line))
@@ -63,7 +65,9 @@ for line in lines:
     if bool == False:
         alias_dict[get_text(line)] = []
         
+print(alias_dict)
         
+"""Merging errors"""
 merged_dict = {}
 
 for key, values in alias_dict.items():
@@ -84,6 +88,8 @@ for key, values in alias_dict.items():
 # for key, values in merged_dict.items():
 #     print(f"key {key}: {values}")
     
+    
+"""Writing aliases with enough occurences in CHARACTERS_FINAL"""
 counter_dict = {}    
 
 for key in merged_dict:
