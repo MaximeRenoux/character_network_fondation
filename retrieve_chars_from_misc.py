@@ -7,6 +7,9 @@ fondation_et_empire = 'Corpus_ASIMOV/Fondation_et_empire_sample-cleaned'
 
 BOOK = cavernes
 
+COMMON_WORD_MINIMUM_LENGTH = 3
+min_iteration = 3
+
 def get_text(input_string):
     match = re.search(r'^\D+', input_string)
     if match:
@@ -22,7 +25,7 @@ def have_common_word(str1, str2):
     
     long_enough = False
     for word in common_words:
-        if len(word) >= 3:
+        if len(word) >= COMMON_WORD_MINIMUM_LENGTH:
             long_enough = True
     if long_enough:
         return len(common_words) > 0
@@ -31,7 +34,8 @@ def have_common_word(str1, str2):
     
 counter_char = {}
 counter_misc = {}
-min_iteration = 3
+
+"""Counting occurences of each CHAR entity"""
 
 with open(BOOK+'_CHARACTERS', 'r', encoding='utf-8') as file:
     lines = file.readlines()
@@ -45,10 +49,12 @@ for line in lines:
         
 # for item in counter_char:
 #     if counter_char[item] >= min_iteration:
-#         print(item+' : '+str(counter_char[item]))
-        
+#         print(item+' : '+str(counter_char[item]))    
 # print('\n\n\n\n\n')
         
+        
+"""Counting occurences of each MISC entity"""
+
 with open(BOOK+'_MISC', 'r', encoding='utf-8') as file:
     lines = file.readlines()
     
@@ -63,12 +69,13 @@ for line in lines:
 #     if counter_misc[item] >= min_iteration:
 #         print(item+' : '+str(counter_misc[item]))
 
+"""Adding MISC entities to CHARACTER file"""
+
 with open(BOOK+'_MISC', 'r', encoding='utf-8') as originalMiscFile:
     linesMisc = originalMiscFile.readlines()
 with open(BOOK+'_CHARACTERS', 'r', encoding='utf-8') as originalCharFile:
     linesChar = originalCharFile.readlines()
     
-
 
 with open(BOOK+'_CHARACTERS', 'a', encoding='utf-8') as file:
     file.write('-------------\n')
@@ -85,7 +92,7 @@ with open(BOOK+'_CHARACTERS', 'a', encoding='utf-8') as file:
                     if c.isalpha():
                         letter_count += 1
                 
-                if letter_count > 2:
+                if letter_count >= COMMON_WORD_MINIMUM_LENGTH:
                         
                     for line in linesMisc:
                         if get_text(line) == misc:
